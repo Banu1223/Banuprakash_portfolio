@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Banu Prakash K S - Portfolio</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      darkMode: 'class'
+    }
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    html {
+      scroll-behavior: smooth;
+    }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: linear-gradient(to right, #ffecd2 0%, #fcb69f 100%);
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+    .dark body {
+      background: linear-gradient(to right, #434343 0%, black 100%);
+      color: #f8fafc;
+    }
+    section {
+      scroll-margin-top: 80px;
+    }
+    .skill-tag {
+      @apply px-4 py-2 bg-gray-100 rounded-full hover:bg-blue-100 transition dark:bg-gray-700 dark:hover:bg-blue-900;
+    }
+    .card {
+      @apply bg-white rounded-xl shadow-md p-6 hover:shadow-lg transition dark:bg-gray-800 dark:text-gray-100 transform hover:scale-105 duration-300 ease-in-out;
+    }
+    .section-title {
+      @apply text-3xl font-semibold mb-6 text-blue-900 dark:text-blue-200;
+    }
+    .container-custom {
+      @apply container mx-auto px-6;
+    }
+    .fade-in {
+      animation: fadeIn 2s ease-in;
+    }
+    @keyframes fadeIn {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body class="text-gray-800 dark:text-gray-100">
+  <div class="fixed top-4 right-4 z-50">
+    <button id="darkToggle" class="bg-gray-200 dark:bg-gray-600 text-sm text-gray-800 dark:text-gray-100 px-4 py-2 rounded-full shadow-md">Toggle Dark Mode</button>
+  </div>
+
+  <header class="shadow-md py-4 sticky top-0 bg-white dark:bg-gray-900 z-50 fade-in">
+    <div class="container-custom flex justify-between items-center">
+      <h1 class="text-2xl font-bold text-blue-800 dark:text-blue-200">Banu Prakash K S</h1>
+      <nav class="space-x-4">
+        <a href="#home" class="hover:text-blue-600 dark:hover:text-blue-300">Home</a>
+        <a href="#about" class="hover:text-blue-600 dark:hover:text-blue-300">About</a>
+        <a href="#education" class="hover:text-blue-600 dark:hover:text-blue-300">Education</a>
+        <a href="#skills" class="hover:text-blue-600 dark:hover:text-blue-300">Skills</a>
+        <a href="#projects" class="hover:text-blue-600 dark:hover:text-blue-300">Projects</a>
+        <a href="#certifications" class="hover:text-blue-600 dark:hover:text-blue-300">Certifications</a>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home" class="min-h-screen flex items-center justify-center bg-gradient-to-br from-yellow-100 via-pink-100 to-purple-100 dark:from-gray-800 dark:via-gray-900 dark:to-gray-800 fade-in">
+    <div class="text-center">
+      <img src="https://images.pexels.com/photos/31995895/pexels-photo-31995895/free-photo-of-turkish-coffee-with-scenic-bursa-view.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2" alt="Banu Prakash K S" class="mx-auto w-40 h-40 rounded-full mb-4 shadow-lg">
+      <h2 class="text-4xl font-bold text-blue-800 dark:text-blue-200 mb-2">Hi, I'm Banu Prakash K S</h2>
+      <p class="text-lg text-gray-600 dark:text-gray-300">MCA Student | Aspiring Web Developer</p>
+    </div>
+  </section>
+
+  <section id="about" class="py-16 bg-white dark:bg-gray-800 fade-in">
+    <div class="container-custom text-center">
+      <h2 class="section-title">About Me</h2>
+      <p class="text-gray-700 dark:text-gray-300 max-w-2xl mx-auto">I'm Banu Prakash K S, a Master of Computer Applications (MCA) student with a strong foundation in mathematics and computer science from my BSc degree. I am passionate about creating modern, efficient, and responsive web applications that provide great user experiences.</p>
+    </div>
+  </section>
+
+  <section id="education" class="py-16 bg-gray-50 dark:bg-gray-900 fade-in">
+    <div class="container-custom text-center">
+      <h2 class="section-title">Education</h2>
+      <div class="max-w-xl mx-auto">
+        <p class="mb-4">🎓 Master of Computer Applications (MCA) - Currently Pursuing</p>
+        <p>📘 BSc in Mathematics and Computer Science</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="py-16 bg-white dark:bg-gray-800 fade-in">
+    <div class="container-custom text-center">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="flex flex-wrap justify-center gap-4">
+        <span class="skill-tag">Problem Solving</span>
+        <span class="skill-tag">HTML</span>
+        <span class="skill-tag">CSS</span>
+        <span class="skill-tag">JavaScript</span>
+        <span class="skill-tag">Java</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="py-16 bg-gray-50 dark:bg-gray-900 fade-in">
+    <div class="container-custom text-center">
+      <h2 class="section-title">Projects</h2>
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+        <div class="card">
+          <h3 class="text-xl font-bold">Employee Management System</h3>
+          <p class="text-gray-600 dark:text-gray-300">A desktop-based Java application to manage employee records including CRUD operations and authentication.</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-bold">Portfolio Website</h3>
+          <p class="text-gray-600 dark:text-gray-300">Personal website showcasing my skills, education, and projects using Tailwind CSS and JavaScript.</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-bold">Music Player using Python</h3>
+          <p class="text-gray-600 dark:text-gray-300">A simple music player application built with Python that supports playing audio files and basic controls.</p>
+        </div>
+        <div class="card">
+          <h3 class="text-xl font-bold">Smart Parking System</h3>
+          <p class="text-gray-600 dark:text-gray-300">An IoT-based project developed for the Smart India Hackathon using Arduino and sensors to automate parking slot detection.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="certifications" class="py-16 bg-white dark:bg-gray-800 fade-in">
+    <div class="container-custom text-center">
+      <h2 class="section-title">Certifications</h2>
+      <ul class="space-y-2 text-gray-700 dark:text-gray-300">
+        <li>✅ MongoDB</li>
+        <li>✅ IBM Artificial Intelligence Fundamentals</li>
+        <li>✅ Customer Engagement Communication Personality Dynamics</li>
+      </ul>
+    </div>
+  </section>
+
+  <footer class="bg-gray-100 dark:bg-gray-900 py-6 text-center text-sm text-gray-500 dark:text-gray-400">
+    <p>&copy; 2025 Banu Prakash K S. All rights reserved.</p>
+  </footer>
+
+  <script>
+    const toggle = document.getElementById('darkToggle');
+    toggle.addEventListener('click', () => {
+      document.documentElement.classList.toggle('dark');
+    });
+  </script>
+</body>
+</html>
